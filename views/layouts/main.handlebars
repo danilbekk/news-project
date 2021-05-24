@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            width: 100px;
+        }
+        .logoImg {
+            width: 100%;
+        }
+
+        .headers {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    /* text-align: center;*/
+    /*position: absolute;*/
+    /*line-height: 5em;*/
+     padding: 20px;
+
+    /*box-s0hadow: black;*/
+
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.sideBar {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.sportsNews {
+    line-height: 5em;
+}
+.politsNews {
+    line-height: 5em;
+}
+.incidentsNews {
+    line-height: 5em;
+}
+.itNews {
+    line-height: 5em;
+}
+.bi {
+    font-size: 50px;
+}
+
+.imgMain {
+    width: 500px;
+}
+
+.img {
+    width: 200px;
+
+}
+
+.mainImg {
+    width: 100%;
+}
+
+
+.bi {
+    font-size: 50px;
+}
+
+.content{
+    width: 700px;
+    
+    margin-top: 30px;
+
+}
+    </style>
+    
+</head>
+<body>
+    <div class="headers">
+        {{#each headers}}
+
+            <div class="sportsNews"> <a href="/categoryId/{{id}}">{{name}}</a></div>
+           
+            {{/each}}
+        </div>
+        
+
+    {{{body}}}
+</body>
+</html>
