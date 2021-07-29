@@ -1,16 +1,14 @@
 <div class="container">
-    <div class="content">
-        {{#each mainNews}}
-    <img class="imgMain" src="{{image}}">
-        <a href="/news/{{id}}"><h3>{{title}}</h3></a>
+  <div class="content">
+    {{#each mainNews}}
+      <img class="imgMain" src="{{img}}" />
+      <a href="/news/{{id}}"><h3>{{title}}</h3></a>
     {{/each}}
-    </div>
-<div class="sideBar">
+  </div>
+  <div class="sideBar">
     {{#each sideBar}}
-    <img class="img" src="{{image}}">
-        <a href="/news/{{id}}"><h3>{{title}}</h3></a>
+      <img class="img" src="{{img}}" />
+      <a href="/news/{{id}}"><h3>{{title}}</h3></a>
     {{/each}}
+  </div>
 </div>
-</div>
-
-
